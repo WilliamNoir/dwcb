@@ -6,11 +6,30 @@ body {
 }
 
 .centered-box {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: white;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
+}
+
+.pageflip {
+  margin: 8px;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageflip:hover {
+  background-color: #63ccdf;
 }
 
 .rightnextbox {
@@ -38,6 +57,16 @@ body {
   height: 500px;
 }
 
+.mephote-container {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  left: 10;
+  top: 0;
+}
+
 .text-box {
   flex: 1;
   margin-left: 20px;
@@ -63,7 +92,7 @@ body {
 .main-text-welcome {
   text-align: center;
   background-color: rgba(200, 200, 200, 0.3);
-  padding: 80px;
+  padding: 6%;
   border-radius: 10px;
   position: absolute;
   top: 34%;
@@ -171,11 +200,15 @@ a:hover {
 .day-button {
   margin-top: 50px;
   display: inline-block;
+  width: 90px;
+  height: 15px;
   padding: 80px 40px;
   font-size: 1.2em;
   text-align: center;
   text-decoration: none;
-  background-color: #246ac7;
+  background-image: url("page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   color: white;
   border-radius: 10px;
   cursor: pointer;
